@@ -20,7 +20,7 @@ clean:
 test: test-py test-js extract
 
 test-py:
-	DJANGO_SETTINGS_MODULE=settings.test python manage.py test
+	DJANGO_SETTINGS_MODULE=settings.test pytest
 
 test-py-debug:
 	DJANGO_SETTINGS_MODULE=settings.test python manage.py test -s
